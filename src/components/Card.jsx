@@ -5,6 +5,7 @@ export function Card({ title, description, icon }) {
         flex flex-col justify-center items-center
         bg-sky-700/50 backdrop-blur-sm 
         rounded-lg p-6 
+        
         min-h-[400px] max-w-sm mx-auto mt-8 
         text-center text-white
         

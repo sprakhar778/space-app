@@ -50,13 +50,13 @@ export function ServiceList() {
     </div>  
   
     {/* Services Section */}
-    <div className="relative w-full py-4 bg-navyish backdrop:blur-sm overflow-visible">
+    <div className="relative w-full  py-6 bg-navyish backdrop:blur-sm overflow-visible">
 
-      <h2 className="text-3xl font-bold text-white text-center mb-8"> 
+      <h2 className="text-5xl font-bold text-white text-center mb-10"> 
         Our Services
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 mx-5 md:grid-cols-3 gap-8">
         {services.map((service, index) => (
           <Card
             key={index}
@@ -67,14 +67,30 @@ export function ServiceList() {
         ))}
       </div>
 
-      <video 
+   <video  
         autoPlay
         loop
         muted
-        className="relative  w-full h-[500px] object-cover mt-12 rounded-lg"
+        className="relative w-full h-[500px] object-cover mt-12 rounded-lg"
       >
         <source src={Wave} type="video/mp4" />
       </video>
+
+      {/* Smooth fade-out blend */}
+      <div
+        className="
+          pointer-events-none
+          w-full 
+          h-32 
+          -mt-32 
+          bg-gradient-to-b 
+          from-transparent 
+          via-navyish/50 
+          to-navyish
+          relative 
+          z-40
+        "
+      />
     </div>
   </div>
 );
