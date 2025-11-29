@@ -31,7 +31,7 @@ export function Banner({ direction = "right", image = satellite1 }) {
             alt="Satellite"
           />
         </div>
-
+        
         {/* Text Section */}
         <div className="flex-1">
           <h2 className="text-white text-4xl font-bold mb-4">Satellite</h2>

@@ -50,7 +50,7 @@ export function ServiceList() {
     </div>  
   
     {/* Services Section */}
-    <div className="relative w-full py-12 px-4 bg-navyish backdrop:blur-sm overflow-visible">
+    <div className="relative w-full py-4 bg-navyish backdrop:blur-sm overflow-visible">
 
       <h2 className="text-3xl font-bold text-white text-center mb-8"> 
         Our Services
@@ -71,7 +71,7 @@ export function ServiceList() {
         autoPlay
         loop
         muted
-        className="w-full h-[500px] object-cover mt-12 rounded-lg"
+        className="relative  w-full h-[500px] object-cover mt-12 rounded-lg"
       >
         <source src={Wave} type="video/mp4" />
       </video>

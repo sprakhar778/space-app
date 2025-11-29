@@ -3,10 +3,13 @@ import moon from "./assets/mountain.png";
 import shuttle from "./assets/space-shuttle.png";
 import satellite1 from "./assets/satellite-1.jpg";
 import satellite2 from "./assets/satellite-2.jpg";
+import rover1 from "./assets/rover-1.jpg";
+import rocket1 from "./assets/rocket-1.jpg";
 import { Navbar } from "./components/Navbar";
 import { HeroSection } from "./components/HeroSection";
 import { ServiceList } from "./components/ServiceList";
 import { Banner } from "./components/Banner";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -36,9 +39,11 @@ function App() {
         <ServiceList />
         <Banner direction="right" image={satellite1} />
         <Banner direction="left" image={satellite2} />
-        <Banner direction="right" image={satellite1} />
-        <Banner direction="left" image={satellite2} />
+        <Banner direction="right" image={rover1} />
+        <Banner direction="left" image={rocket1} />
+        <Footer />
       </div>
+  
     </div>
   );
 }
