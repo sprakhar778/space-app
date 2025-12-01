@@ -38,7 +38,7 @@ export function ServiceList() {
           max-w-none 
           h-32 
           object-fit  
-          z-20
+          z-5
         "
       />
 
