@@ -4,8 +4,8 @@ export function Banner({ direction = "right", image = satellite1 }) {
   const isLeft = direction === "left";
 
   return (
-    <div className="relative w-full py-12 px-8 bg-navyish overflow-visible flex justify-center items-center">
-      <div
+    <div  className="relative w-full py-12 px-8 bg-navyish overflow-visible flex justify-center items-center">
+      <div data-aos="fade-up" data-aos-delay="200"
         className={
           `
           relative flex flex-col md:flex-row items-center   gap-8 bg-navyish
@@ -25,7 +25,7 @@ export function Banner({ direction = "right", image = satellite1 }) {
       >
         {/* Image Section */}
         <div className="w-full md:w-[50%] h-[250px]  md:h-[300px] overflow-hidden flex-shrink-0 rounded-md">
-          <img
+          <img data-aos="zoom-in" data-aos-delay="300"
             className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
             src={image}
             alt="Satellite"
@@ -34,15 +34,15 @@ export function Banner({ direction = "right", image = satellite1 }) {
         
         {/* Text Section */}
         <div className="flex-1">
-          <h2 className="text-white text-4xl font-bold mb-4">Satellite</h2>
-          <p className="text-white mb-4">
+          <h2  data-aos="fade-up" data-aos-delay="250" className="text-white text-4xl font-bold mb-4">Satellite</h2>
+          <p  data-aos="fade-up" data-aos-delay="300" className="text-white mb-4">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente,
             excepturi? Soluta quos sunt nulla necessitatibus provident inventore
             labore recusandae quae.
           </p>
 
           {/* Button Hover */}
-          <button className="bg-blue-500 px-6 py-3 text-white rounded-md transition-all duration-300 hover:bg-blue-400 hover:shadow-[0_0_12px_rgba(0,150,255,0.6)] hover:scale-105">
+          <button  data-aos="fade-up" data-aos-delay="300" className="bg-blue-500 px-6 py-3 text-white rounded-md transition-all duration-300 hover:bg-blue-400 hover:shadow-[0_0_12px_rgba(0,150,255,0.6)] hover:scale-105">
             Learn More
           </button>
         </div>

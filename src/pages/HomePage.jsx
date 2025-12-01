@@ -13,13 +13,13 @@ import { Footer } from "../components/Footer";
 
 function HomePage() {
   return (
-    <div className="">
+    <div  className="">
       <div className="h-[1000px] w-full relative">
         <video
           autoPlay
           loop
           muted
-          className="fixed top-0 left-0 w-full h-[900px] object-cover z-[-10]"
+          className="absolute top-0 left-0 w-full h-[800px] object-cover z-[-10]"
         >
           <source src={bgVideo} type="video/mp4" />
         </video>
@@ -35,7 +35,10 @@ function HomePage() {
         </div>
 
         <Navbar />
+        <div data-aos="fade-up" data-aos-delay="500" className="pt-[100px]">
         <HeroSection />
+        </div>
+
         <ServiceList />
         <Banner direction="right" image={satellite1} />
         <Banner direction="left" image={satellite2} />

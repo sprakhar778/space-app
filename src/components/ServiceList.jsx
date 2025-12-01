@@ -9,7 +9,7 @@ export function ServiceList() {
     {
       title: 'Rocket Launches',
       description: 'Experience the thrill of rocket launches with our state-of-the-art technology.',
-      icon: <FaSpaceAwesome className="text-5xl "/>,
+      icon: <FaSpaceAwesome className="text-5xl "/>
     },
     {
       title: 'Satellite Deployment',
@@ -50,9 +50,9 @@ export function ServiceList() {
     </div>  
   
     {/* Services Section */}
-    <div className="relative w-full  py-6 bg-navyish backdrop:blur-sm overflow-visible">
+    <div className="relative w-full  py-[200px] bg-navyish backdrop:blur-sm overflow-visible">
 
-      <h2 className="text-5xl font-bold text-white text-center mb-10"> 
+      <h2 data-aos="fade-up" data-aos-delay="300" className="text-5xl font-bold text-white text-center mb-10"> 
         Our Services
       </h2>
 

@@ -1,6 +1,6 @@
 export function Card({ title, description, icon }) {
   return (
-    <div
+    <div  data-aos="fade-up" data-aos-delay="300" 
       className="
         flex flex-col justify-center items-center
         bg-sky-700/50 backdrop-blur-sm 
@@ -15,15 +15,15 @@ export function Card({ title, description, icon }) {
         hover:shadow-lg hover:shadow-sky-500/30
       "
     >
-      <div className="text-4xl mb-4 font-semibold">
+      <div data-aos="fade-up" data-aos-delay="400" className="text-4xl mb-4 font-semibold">
         {title}
       </div>
 
-      <h2 className="text-2xl font-bold mb-2">
+      <h2 data-aos="fade-up" data-aos-delay="500" className="text-2xl font-bold mb-2">
         {icon}
       </h2>
 
-      <p className="text-white/80">
+      <p data-aos="fade-up" data-aos-delay="600"  className="text-white/80">
         {description}
       </p>
     </div>
